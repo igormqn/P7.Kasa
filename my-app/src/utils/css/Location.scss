@@ -1,0 +1,134 @@
+.location-block {
+    display: flex;
+    justify-content: space-between;
+}
+.location-title {
+    font-family: $principal-f;
+    font-weight: $m;
+    size: 36px;
+    line-height: 51.34px;
+    color: $color-1;
+    font-size: 36px;
+    transition-duration: 1s;
+}
+.location-find {
+    font-family: $principal-f;
+    font-size: 1rem;
+    font-weight: $m;
+    margin-top: -1.3rem;
+    color: $color-1;
+}
+.location-tags {
+    flex-wrap: wrap;
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+}
+.tags-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.1rem;
+    margin-top: 5px;
+    width: 120px;
+    margin-right: 2rem;
+    text-align: center;
+    font-family: $principal-f;
+    font-size: 0.9rem;
+    border-radius: 0.6rem;
+    font-weight: $m;
+    color: $color2;
+    background-color: $color-1;
+}
+.account-container {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+}
+.account-block{
+    margin-top: 25px;
+}
+
+.account-ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.account-li {
+    width: 93px;
+    font-family: $principal-f;
+    font-weight: $m;
+    font-size: 1rem;
+    color: $color-1;
+}
+.account-rating{
+    margin-left: 30px;
+}
+.account-img {
+    height: 64px;
+    width: 64px;
+    border-radius: 32px;
+}
+.account-star-block {
+    height: 30px;
+    width: 30px;
+    margin-bottom: 22px;
+}
+.subside-place {
+   display: flex;
+   justify-content: center;
+   gap: 40px;
+   width: 100%;
+}
+.sub-equipments-ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+@media screen and (max-width: 768px){
+    .location-block {
+        display: block;
+    }
+    .location-title {
+        font-size: 1.1rem;
+    }
+    .location-info{
+        margin-top: 11rem;
+    }
+    .location-find {
+        font-size: 0.9rem;
+    }
+    .location-tags {
+        height: 20px;
+        font-size: 10px;
+    }
+    .account-container {
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        align-items: center;
+        height: 50px;
+    }
+    .account-block {
+        margin: 0;
+    }
+    .account-img {
+        margin: 0;
+    }
+    .account-li {
+        font-size: 0.8rem;
+    }
+    .account-rating {
+        margin-top: 1.5rem;
+    }
+    .account-star-block {
+        height: 32px;
+        width: 32px;
+    }
+    .account-star-block {
+        height: 15px;
+        margin: 0;
+        width: 15px;
+    }
+    .subside-place {
+        display: block;
+    }
+}

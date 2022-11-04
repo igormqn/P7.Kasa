@@ -1,0 +1,34 @@
+.error-block {
+    text-align: center;
+    color: $color-1;
+    font-family: $principal-f;
+    margin: 40px auto;
+}
+.error404-text{
+    font-size: 288px;
+ 
+    margin:0;
+}
+.error404-text2 {
+    font-size: 36px;
+    margin-bottom: 150px;;
+    font-weight: $m;
+}
+.back-page {
+    color: $color-1;
+    font-family: $principal-f;
+    font-size: 1.1rem;
+    font-weight: $m;
+    
+}
+@media screen and (max-width: 1024px){
+    .error-title {
+        font-size: 6rem;
+    }
+    .error-title2 {
+        font-size: 1.1rem;
+    }
+    .back-page {
+        font-size: 0.9rem;
+    }
+}

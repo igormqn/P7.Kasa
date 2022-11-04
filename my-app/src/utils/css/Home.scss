@@ -1,0 +1,12 @@
+.card-home {
+  border-radius: 1.5rem;
+  background-color: $color-1;
+}
+
+@media screen and (max-width: 1024px) {
+    .card-home {
+        border-radius: 1.5rem;
+        background-color: $color2;
+      }
+      
+}
