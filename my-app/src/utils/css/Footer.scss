@@ -6,23 +6,21 @@
     background-color: black;
     height: 209px;
     width: 100%;
-    margin-top: 50px
+    margin-top: 50px;
+    @media screen and (max-width: 1024px){
+        height: 209px;
+    }
 }
 .footer-img {
     padding: 35px 0 20px 0;
-}
-.footer-text {
-    color: white;
-    font-size: 24px;
-}
-@media screen and (max-width: 1024px){
-    .footer-container {
-        height: 209px;
-    }
-    .footer-img {
+    @media screen and (max-width: 1024px) {
         height: 40px;
     }
-    .footer-text {
-        font-size: 12px;
+}
+.footer-text {
+    color: $color2;
+    font-size: 1.4rem;
+    @media screen and (max-width: 1024px) {
+        font-size: 0.8rem;
     }
 }

@@ -8,28 +8,25 @@
     font-size: 288px;
     color: $color-1;
     margin:0;
+    @media screen and (max-width: 1024px) {
+        font-size: 6rem;
+    }
 }
 .error404-text2 {
-    font-size: 36px;
     margin-bottom: 150px;
     color: $color-1;
+    font-size: 36px;
     font-weight: $m;
+    @media screen and (max-width: 1024px) {
+        font-size: 1.1rem;
+    }
 }
 .back-page {
     color: $color-1;
     font-family: $principal-f;
     font-size: 1.1rem;
     font-weight: $m;
-    
-}
-@media screen and (max-width: 1024px){
-    .error-title {
-        font-size: 6rem;
-    }
-    .error-title2 {
-        font-size: 1.1rem;
-    }
-    .back-page {
+    @media screen and (max-width: 1024px) {
         font-size: 0.9rem;
     }
 }

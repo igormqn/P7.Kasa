@@ -1,6 +1,9 @@
 .location-block {
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 768px) {
+        display: block;
+    }
 }
 .location-title {
     font-family: $principal-f;
@@ -8,8 +11,11 @@
     size: 36px;
     line-height: 51.34px;
     color: $color-1;
-    font-size: 36px;
-    transition-duration: 1s;
+    font-size: 2.2rem;
+    transition-duration: 1.2s;
+    @media screen and (max-width: 768px) {
+        font-size: 1.1rem;
+    }
 }
 .location-find {
     font-family: $principal-f;
@@ -17,12 +23,21 @@
     font-weight: $m;
     margin-top: -1.3rem;
     color: $color-1;
+    @media screen and (max-width: 768px) {
+            font-size: 0.9rem;
+    }
+   
 }
 .location-tags {
     flex-wrap: wrap;
     padding-left: 0;
     list-style-type: none;
     display: flex;
+    @media screen and (max-width: 768px){
+        height: 20px;
+        font-size: 10px;
+        display: flex;
+    }
 }
 .tags-list {
     display: flex;
@@ -39,14 +54,27 @@
     font-weight: $m;
     color: $color2;
     background-color: $color-1;
+    @media screen and (max-width: 768px) {
+        margin-right: 0.5rem;
+    }
 }
 .account-container {
     flex-direction: column;
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 768px) {
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            align-items: center;
+            height: 50px;
+            margin-top: 4rem;
+    }
 }
 .account-block{
     margin-top: 25px;
+    @media screen and (max-width: 768px) {
+            margin: 0;
+    }
 }
 
 .account-ul {
@@ -60,86 +88,60 @@
     font-weight: $m;
     font-size: 1rem;
     color: $color-1;
+    @media screen and (max-width: 768px) {
+            font-size: 0.8rem;
+    }
 }
 .account-rating{
     margin-left: 30px;
+    @media screen and (max-width: 768px){
+        margin-top: 1.5rem;
+        margin-left: 0rem;
+    }
 }
 .account-img {
     height: 64px;
     width: 64px;
     border-radius: 32px;
+    @media screen and (max-width: 768px) {
+        margin: 0;
+}
 }
 .account-star-block {
     height: 30px;
     width: 30px;
     margin-bottom: 22px;
+    @media screen and (max-width: 768px){
+        height: 32px;
+        width: 32px;
+    }
 }
 .subside-place {
    display: flex;
    justify-content: center;
    gap: 40px;
    width: 100%;
+   @media screen and (max-width: 768px) {
+    display: block;
+}
 }
 .sub-equipments-ul {
     list-style-type: none;
     padding-left: 0;
 }
 @media screen and (max-width: 768px){
-    .location-block {
-        display: block;
-    }
-    .location-title {
-        font-size: 1.1rem;
-    }
     .location-info{
-        margin-top: 11rem;
+        margin-top: -1rem;
     }
-    .location-find {
-        font-size: 0.9rem;
-    }
-    .location-tags {
-        height: 20px;
-        font-size: 10px;
-        display: flex;
-    }
-    .tags-list {
-        margin-right: 0.5rem;
-    }
-    .account-container {
-        justify-content: space-between;
-        flex-direction: row-reverse;
-        align-items: center;
-        height: 50px;
-        margin-top: 4rem;
-    }
-    .account-block {
-        margin: 0;
-    }
-    .account-img {
-        margin: 0;
-    }
-    .account-li {
-        font-size: 0.8rem;
-    }
-    .account-rating {
-        margin-top: 1.5rem;
-        margin-left: 0rem;
-    }
-    .account-star-block {
-        height: 32px;
-        width: 32px;
-    }
-    .account-star-block {
+    .account-star-img{
         height: 15px;
         margin: 0;
         width: 15px;
         
     }
-    .account-star-img {
-        height: 1.5rem;
-        margin-bottom: 1rem
-    }
-    .subside-place {
-        display: block;
-    }
 }
+  
+
+
+   
+  

@@ -1,6 +1,9 @@
 .subside-block {
     padding: 10px 0px;
     flex:1;
+    @media screen and (max-width: 768px) {
+            padding: 0;
+    }
 }
 .subside-btn {
     display: flex;
@@ -16,33 +19,30 @@
     padding-right: 15px;
     font-weight: $m;
     font-family: $principal-f;
-    font-size: 20px;
+    font-size: 1.2rem;
     color: $color2;
+    @media screen and (max-width: 768px) {
+        font-size: 0.8rem;
+        height: 35px;
+    }
 }
 
 .subside-text {
-    font-family: $principal-f;
-    color: #FF6060;
-    size: 24px;
-    background: #F2F2F2;
-    border-radius: 0px 0px 5px 5px;
-    padding: 15px 10px 5px 10px;
-    list-style-type: none;
-    position: relative;
-    top: -5px;
     z-index: -1;
+    font-family: $principal-f;
+    color: $color-1;
+    size: 1.4rem;
+    top: -5px;
+    border-radius: 0px 0px 5px 5px;
+    background: $color2;
+    position: relative;
+    list-style-type: none;
+    padding: 15px 10px 5px 10px;
+    @media screen and (max-width: 768px) {
+        font-size: 0.8rem;
+    }
 }
 @media screen and (max-width: 768px){
-    .subside-block {
-        padding: 0;
-    }
-    .subside-btn {
-        font-size: 13px;
-        height: 35px;
-    }
-    .subside-text {
-        font-size: 12px;
-    }
     .arrowDown {
         height: 20px;
     }

@@ -12,12 +12,9 @@ body {
     max-width: 1240px;
     margin: 40px auto;
     padding: 25px 75px;
-}
-
-@media screen and (max-width: 1240px) {
-    .container {
-        padding: 0rem 1.5rem;
-        margin: 1.3rem auto;
-
+    @media screen and (max-width: 1240px) {
+            padding: 0rem 1.5rem;
+            margin: 1.3rem auto;
     }
 }
+
