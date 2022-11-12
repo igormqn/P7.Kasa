@@ -6,7 +6,8 @@ import Subside from "../components/Subside"
 
 
 function makeAboutPage() {
-    return (<main class="about-container">
+    return (
+    <main class="about-container">
         <HomeBanner />
         <div class="about-subside">
           <Subside
@@ -26,6 +27,7 @@ function makeAboutPage() {
             description={<p>La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.</p>}
           />
         </div>
-        </main>)
+        </main>
+        )
 }
 export default makeAboutPage ;
