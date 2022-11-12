@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import starFull from "../assets/images/star_rate-full.png" ;
 import Data from '../Data/Data';
+/*import {Navigate} from 'react-router-dom'*/ 
 import starEmpty from "../assets/images/star_rate-empty.png" ;
 import "../utils/css/style.css";
 
@@ -15,25 +16,29 @@ function Location() {
     const findPlace = Data.find((place) => place.id === id);
     if (!findPlace) {
       return <Error />
+      /*  && (
+          <Navigate to="/" replace={true} />
+        )}*/
     }
+    
       return (
-      <main className="location-container">
+      <main class="location-container">
         <div class="multiImages-block">
           <Images pictures={findPlace.pictures} />
         </div>
         <section class="location-info" >
           <div class="location-block">
-            <div className="location"> 
-              <h1 className='location-title'>{findPlace.title}</h1>
-              <h2 className='location-find'>{findPlace.location}</h2>
-              <ul className='location-tags'>
+            <div class="location"> 
+              <h1 class='location-title'>{findPlace.title}</h1>
+              <h2 class='location-find'>{findPlace.location}</h2>
+              <ul class='location-tags'>
                 {findPlace.tags.map((tags, index) => (
-                    <li className="tags-list" key={`${index}-${tags}`}>{tags}</li>
+                    <li class="tags-list" key={`${index}-${tags}`}>{tags}</li>
                   ))}
               </ul>
             </div>
   
-            <div className='account-container'>
+            <div class='account-container'>
               <div className='account-block'>
                 <ul className='account-ul'>
                   <li className='account-li'>{findPlace.host.name}</li>
